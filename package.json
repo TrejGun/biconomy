@@ -1,0 +1,37 @@
+{
+  "author": {
+    "email": "trejgun@gmail.com",
+    "name": "TrejGun"
+  },
+  "dependencies": {
+    "@biconomy/abstractjs": "1.1.1",
+    "dotenv": "17.2.1",
+    "viem": "2.33.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "@ethberry/eslint-config": "5.0.8",
+    "@types/node": "24.3.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.5.2",
+    "prettier": "3.5.3",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "biconomy",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "lint": "eslint . --fix",
+    "prepare": "husky",
+    "prettier": "prettier . --write",
+    "start": "node ."
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
